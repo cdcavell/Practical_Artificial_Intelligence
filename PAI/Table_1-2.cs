@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PAI
 {
-    class Table_1_2
+    public static class Table_1_2
     {
         public static void Display()
         {
