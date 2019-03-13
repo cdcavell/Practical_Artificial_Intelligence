@@ -9,7 +9,7 @@ namespace PAI
         public static void Display()
         {
             Console.WriteLine(string.Empty);
-            Console.WriteLine(" Table 1-1: Truth Table for Negation Logical Connective [NOT]");
+            Console.WriteLine(" Table 1-1: Truth Table for Negation Logical Connective [NOT p]");
             Console.WriteLine(string.Empty);
 
             Row.Write("p", "NOT p", "");

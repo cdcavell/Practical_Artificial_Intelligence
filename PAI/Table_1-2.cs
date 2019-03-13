@@ -9,7 +9,7 @@ namespace PAI
         public static void Display()
         {
             Console.WriteLine(string.Empty);
-            Console.WriteLine(" Table 1-2: Truth Table for the Conjunction Logical Connective (p ^ q) [AND]");
+            Console.WriteLine(" Table 1-2: Truth Table for the Conjunction Logical Connective (p ^ q) [p AND q]");
             Console.WriteLine(string.Empty);
 
             Row.Write("p", "q", "p ^ q");

@@ -4,15 +4,15 @@ using System.Text;
 
 namespace PAI
 {
-    public static class Table_1_3
-    {       
+    public static class Table_1_4
+    {
         public static void Display()
         {
             Console.WriteLine(string.Empty);
-            Console.WriteLine(" Table 1-3: Truth Table for the Disjunction Logical Connective (p V q) [p OR q]");
+            Console.WriteLine(" Table 1-4: Truth Table for the Implication Logical Connective (p => q) [IF ... THEN (NOT p OR q)]");
             Console.WriteLine(string.Empty);
 
-            Row.Write("p", "q", "p V q");
+            Row.Write("p", "q", "p => q");
 
             Evaluate(new Variable(true), new Variable(false));
             Evaluate(new Variable(false), new Variable(true));
@@ -22,7 +22,7 @@ namespace PAI
 
         private static void Evaluate(Variable p, Variable q)
         {
-            Row.Write(p.Value.ToString(), q.Value.ToString(), new Or(p, q).Evaluate().ToString());
+            Row.Write(p.Value.ToString(), q.Value.ToString(), new Or(new Not(p), q).Evaluate().ToString());
         }
     }
 }
