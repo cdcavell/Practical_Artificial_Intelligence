@@ -8,6 +8,8 @@ namespace PAI
     {
         public static void Display()
         {
+            Console.Clear();
+
             Table_1_1.Display();
             Console.WriteLine(string.Empty);
             Table_1_2.Display();
@@ -19,9 +21,7 @@ namespace PAI
             Table_1_5.Display();
             Console.WriteLine(string.Empty);
 
-            Console.WriteLine(string.Empty);
-            Console.WriteLine("Press <Enter> key to exit ...");
-            Console.ReadLine();
+            Program.PauseReturnMain();
         }
     }
 }
