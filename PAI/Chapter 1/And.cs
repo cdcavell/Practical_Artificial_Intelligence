@@ -18,5 +18,10 @@ namespace PAI
         {
             return new And(P.ToNnf(), Q.ToNnf());
         }
+
+        public override Formula ToCnf()
+        {
+            return new And(P.ToNnf(), Q.ToNnf());
+        }
     }
 }

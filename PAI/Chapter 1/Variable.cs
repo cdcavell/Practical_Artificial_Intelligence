@@ -26,5 +26,10 @@ namespace PAI
         {
             return this;
         }
+
+        public override Formula ToCnf()
+        {
+            return this;
+        }
     }
 }

@@ -34,5 +34,10 @@ namespace PAI
                 return new Not((P as Not).P);
             return this;
         }
+
+        public override Formula ToCnf()
+        {
+            return this;
+        }
     }
 }
