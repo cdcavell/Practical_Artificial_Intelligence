@@ -21,5 +21,10 @@ namespace PAI
         {
             return new List<Variable>() { this };
         }
+
+        public override Formula ToNnf()
+        {
+            return this;
+        }
     }
 }

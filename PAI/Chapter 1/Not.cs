@@ -21,5 +21,18 @@ namespace PAI
         {
             return new List<Variable>(P.Variables());
         }
+
+        public override Formula ToNnf()
+        {
+            if (P is And)
+                return new Or(new Not((P as And).P), new Not((P
+                as And).Q));
+            if (P is Or)
+                return new And(new Not((P as Or).P), new Not((P
+                as Or).Q));
+            if (P is Not)
+                return new Not((P as Not).P);
+            return this;
+        }
     }
 }

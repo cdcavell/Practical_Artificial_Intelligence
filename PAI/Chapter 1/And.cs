@@ -13,5 +13,10 @@ namespace PAI
         {
             return P.Evaluate() && Q.Evaluate();
         }
+
+        public override Formula ToNnf()
+        {
+            return new And(P.ToNnf(), Q.ToNnf());
+        }
     }
 }

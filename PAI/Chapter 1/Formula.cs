@@ -8,5 +8,6 @@ namespace PAI
     {
         public abstract bool Evaluate();
         public abstract IEnumerable<Variable> Variables();
+        public abstract Formula ToNnf();
     }
 }
