@@ -12,7 +12,7 @@ namespace PAI
             Console.WriteLine(" Table 1-5: Truth Table for the Equivalence Logical Connective (p <=> q) [IF AND ONLY IF ((NOT p OR q) AND (NOT q OR p))]");
             Console.WriteLine(string.Empty);
 
-            Row.Write("p", "q", "p => q");
+            Row.Write("p", "q", "p <=> q");
 
             Evaluate(new Variable(true), new Variable(false));
             Evaluate(new Variable(false), new Variable(true));
