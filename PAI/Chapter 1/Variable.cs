@@ -31,5 +31,17 @@ namespace PAI
         {
             return this;
         }
+
+        public override IEnumerable<Formula> Literals()
+        {
+            return new List<Formula>() { this };
+        }
+
+        public string Name { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

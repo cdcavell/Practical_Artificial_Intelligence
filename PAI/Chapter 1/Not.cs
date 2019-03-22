@@ -39,5 +39,16 @@ namespace PAI
         {
             return this;
         }
+
+        public override IEnumerable<Formula> Literals()
+        {
+            return P is Variable ? new List<Formula>() { this } :
+            P.Literals();
+        }
+
+        public override string ToString()
+        {
+            return "!" + P;
+        }
     }
 }

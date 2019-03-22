@@ -23,5 +23,10 @@ namespace PAI
         {
             return DistributeCnf(P.ToCnf(), Q.ToCnf());
         }
+
+        public override string ToString()
+        {
+            return "(" + P + " | " + Q + ")";
+        }
     }
 }

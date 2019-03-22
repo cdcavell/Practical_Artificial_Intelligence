@@ -20,5 +20,15 @@ namespace PAI
 
             return P.Variables().Concat(Q.Variables());
         }
+
+        public override IEnumerable<Formula> Literals()
+        {
+            return P.Literals().Concat(Q.Literals());
+        }
+
+        public override string ToString()
+        {
+            return "(" + P + " & " + Q + ")";
+        }
     }
 }

@@ -15,8 +15,8 @@ namespace PAI
 
             Console.WriteLine(" Main Menu");
             Console.WriteLine(" --------------------");
-            Console.WriteLine(" [1] Chapter 1 - Logical Connectives");
-            Console.WriteLine(" [2] Chapter 2");
+            Console.WriteLine(" [1] Chapter 1  - Logical Connectives");
+            Console.WriteLine(" [2] Chapter 2  - Automated Theorem Proving & First-Order Logic");
             Console.WriteLine(" [3] Chapter 3");
             Console.WriteLine(" [4] Chapter 4");
             Console.WriteLine(" --------------------\n");
@@ -38,6 +38,9 @@ namespace PAI
 
                     case 1:
                         Chapter1.Display();
+                        break;
+                    case 2:
+                        Chapter2.Display();
                         break;
                 }
             }

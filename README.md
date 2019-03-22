@@ -6,3 +6,10 @@ ISBN: 9781484233566
 https://doi.org/10.1007/978-1-4842-3357-3
 
 
+
+
+Practical Artificial Intelligence: Machine Learning, Bots, and Agent Solutions Using C#
+ 
+
+Chapter 2 - Automated Theorem Proving & First-Order Logic 
+ 

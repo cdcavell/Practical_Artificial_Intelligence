@@ -21,5 +21,7 @@ namespace PAI
                 DistributeCnf(p, (q as And).Q));
             return new Or(p, q);
         }
+
+        public abstract IEnumerable<Formula> Literals();
     }
 }
