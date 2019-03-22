@@ -6,7 +6,7 @@ namespace PAI
 {
     public class Heuristics
     {
-        // Just retun first literal found
+        // Just return first literal found
         public static Formula ChooseLiteral(Cnf cnf)
         {
             foreach (var clause in cnf.Clauses)
